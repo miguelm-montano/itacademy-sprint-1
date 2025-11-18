@@ -1,0 +1,46 @@
+body {
+  max-width: 1200px;
+}
+
+.container-a {
+  background-color: black;
+  padding: 18px;
+  margin: 18px;
+}
+
+.container-a2 {
+  background-color: rgb(53, 53, 162);
+  padding: 18px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.logo {
+  background-color: rgb(248, 88, 88);
+  padding: 8px 80px 8px 5px;
+}
+
+.nav {
+  background-color: rgb(231, 98, 98);
+  padding: 8px 8px;
+  flex: 1;
+}
+
+.social {
+  background-color: rgb(231, 98, 98);
+  padding: 8px 80px 8px 5px;
+}
+
+.container-a3 {
+  background-color: rgb(255, 140, 0);
+  display: flex;
+  margin-top: 20px;
+  padding: 18px;
+}
+
+.banner {
+  background-color: yellow;
+  padding: 18px;
+  flex: 1;
+}
