@@ -106,3 +106,23 @@ body {
   background-color: rgb(253, 255, 197);
   padding: 10px;
 }
+
+@media (max-width: 768px) {
+  .container-a2 {
+    flex-direction: column;
+    align-items: strech;
+  }
+
+  .container-b {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+@media (max-width: 480px) {
+  .articulos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
