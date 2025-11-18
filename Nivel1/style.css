@@ -110,7 +110,7 @@ body {
 @media (max-width: 768px) {
   .container-a2 {
     flex-direction: column;
-    align-items: strech;
+    align-items: stretch;
   }
 
   .container-b {
@@ -123,6 +123,5 @@ body {
   .articulos {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 10px;
   }
 }
