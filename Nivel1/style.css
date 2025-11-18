@@ -4,16 +4,16 @@ body {
 
 .container-a {
   background-color: black;
-  padding: 18px;
-  margin: 18px;
+  padding: 15px;
+  margin: 15px;
 }
 
 .container-a2 {
   background-color: rgb(53, 53, 162);
-  padding: 18px;
+  padding: 15px;
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 15px;
 }
 
 .logo {
@@ -35,12 +35,63 @@ body {
 .container-a3 {
   background-color: rgb(255, 140, 0);
   display: flex;
-  margin-top: 20px;
+  margin-top: 15px;
   padding: 18px;
 }
 
 .banner {
   background-color: yellow;
-  padding: 18px;
+  padding: 15px;
   flex: 1;
+}
+
+.container-b {
+  background-color: black;
+  padding: 15px;
+  margin: 15px;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.container-b2 {
+  background-color: grey;
+  flex: 1;
+  padding: 15px;
+}
+
+.articulos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.article1,
+.article2,
+.article3,
+.article4 {
+  background-color: rgb(24, 91, 206);
+  padding: 8px;
+}
+
+.navegacion {
+  background-color: rgb(132, 210, 238);
+  padding: 8px;
+  margin-top: 15px;
+}
+
+.container-b3 {
+  background-color: rgb(248, 88, 88);
+  padding: 15px;
+}
+
+.publicidad1,
+.publicidad2 {
+  background-color: yellow;
+  padding: 8px 20px 8px 5px;
+  gap: 15px;
+}
+
+.publicidad2 {
+  margin-top: 15px;
 }
