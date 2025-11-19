@@ -12,21 +12,52 @@ a {
 
 header {
   background-color: bisque;
+  max-width: 1200px;
   height: 300px;
+  margin: auto;
+  padding: 10px 20px;
+  background-image: url(Images/header.jpg);
+  background-size: 125%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  align-items: center;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.logo,
+.menu,
+.social {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
+  margin: 0;
+}
+
+.menu {
   display: flex;
+  gap: 60px;
 }
 
 .logo img {
-  height: 50px;
+  height: 55px;
 }
 
-nav {
+.center-area {
+  flex: 1;
   display: flex;
-  gap: 80px;
+  justify-content: center;
+}
+
+.social {
+  display: flex;
+  gap: 15px;
+  padding-right: 30px;
 }
