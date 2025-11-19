@@ -20,6 +20,20 @@ header {
   background-size: 150%;
   background-repeat: no-repeat;
   background-position: center 53%;
+
+  position: relative; /*Para que funcione el .overlay*/
+}
+
+.overlay {
+  background-color: black;
+  position: absolute;
+  width: 1100px;
+  height: 130px;
+  opacity: 0.1;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 .container {
@@ -37,16 +51,11 @@ header {
   align-items: center;
 }
 
-.logo {
-  margin: 0;
-}
-
 .logo img {
   height: 55px;
 }
 
 .menu {
-  display: flex;
   gap: 120px;
 }
 
@@ -57,7 +66,6 @@ header {
 }
 
 .social {
-  display: flex;
   gap: 15px;
   padding-right: 30px;
 }
@@ -71,6 +79,66 @@ header {
   color: darksalmon;
 }
 
-.recuadro {
-  background-color: gray;
+.contenido {
+  display: flex;
+  flex: 1;
+  width: 1200px;
+  margin: auto;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+#caracteristicas,
+.something {
+  background-color: rgb(220, 220, 220);
+}
+
+#caracteristicas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 15px;
+  flex: 1;
+}
+
+#caracteristicas p {
+  column-count: 2;
+}
+
+.something {
+  width: 200px;
+  text-align: center;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 14px;
+}
+
+.cultura,
+.gastronomia,
+.turismo,
+.vida-nocturna {
+  background-color: white;
+  padding: 15px 15px 1px 15px;
+  margin: 0;
+}
+
+.imagen-caracteristica img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.imagen-caracteristica {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+h3 {
+  background-color: rgb(228, 134, 137);
+  padding: 5px 3px 1px 3px;
+  color: white;
+  margin: 0;
 }
