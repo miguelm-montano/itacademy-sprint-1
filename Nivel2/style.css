@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+header {
+  background-color: bisque;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo img {
+  height: 50px;
+}
+
+nav {
+  display: flex;
+  gap: 80px;
+}
