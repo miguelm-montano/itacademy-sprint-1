@@ -121,6 +121,7 @@ body {
 
 @media (max-width: 480px) {
   .articulos {
+    flex-direction: column;
     display: grid;
     grid-template-columns: 1fr;
   }

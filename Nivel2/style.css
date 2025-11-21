@@ -1,8 +1,26 @@
+/*Font*/
+@import url("https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap");
+
 * {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
+}
+
+/*Typos*/
+.menu {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+}
+.something {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+}
+
+.something h4 {
+  font-size: 0.9rem;
 }
 
 a {
@@ -11,7 +29,6 @@ a {
 }
 
 header {
-  background-color: bisque;
   max-width: 1200px;
   height: 330px;
   margin: auto;
@@ -66,7 +83,7 @@ header {
 }
 
 .social {
-  gap: 15px;
+  gap: 10px;
   padding-right: 30px;
 }
 
@@ -76,6 +93,8 @@ header {
   justify-content: center;
   font-size: 25px;
   padding-top: 138px;
+
+  font-weight: 100;
   color: darksalmon;
 }
 
@@ -89,19 +108,22 @@ header {
 }
 
 #caracteristicas,
-.something {
-  background-color: rgb(220, 220, 220);
+.something,
+footer {
+  background-color: rgb(216, 215, 215);
 }
 
 #caracteristicas {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  padding: 15px;
+  gap: 15px;
+  padding: 10px;
   flex: 1;
+
+  align-items: start;
 }
 
-#caracteristicas p {
+.descripcion {
   column-count: 2;
 }
 
@@ -111,7 +133,6 @@ header {
   padding-top: 15px;
   padding-left: 15px;
   padding-right: 15px;
-  font-size: 14px;
 }
 
 .cultura,
@@ -119,26 +140,57 @@ header {
 .turismo,
 .vida-nocturna {
   background-color: white;
-  padding: 15px 15px 1px 15px;
+  padding: 10px 10px 1px 10px;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  color: rgba(119, 118, 118);
 }
 
 .imagen-caracteristica img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .imagen-caracteristica {
   width: 100%;
-  height: auto;
+  height: 220px;
   overflow: hidden;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 h3 {
-  background-color: rgb(228, 134, 137);
-  padding: 5px 3px 1px 3px;
+  background-color: rgb(240, 128, 128);
+  padding: 10px 3px 1px 5px;
   color: white;
   margin: 0;
+
+  font-size: 1.4rem;
+  font-family: "Martian Mono", monospace;
+  font-weight: 400;
+}
+
+.descripcion-caracteristicas {
+  grid-column: 1 / -1;
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+footer {
+  max-width: 1200px;
+  height: 30px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: 10px;
+  width: 100%;
 }
