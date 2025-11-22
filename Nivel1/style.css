@@ -1,66 +1,92 @@
-body {
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+header,
+main,
+footer {
   max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
 }
 
-.container-a {
+header {
   background-color: black;
-  padding: 15px;
-  margin: 15px;
+  padding: 20px;
+  margin-bottom: 15px;
 }
 
-.container-a2 {
-  background-color: rgb(53, 53, 162);
+main {
+  background-color: black;
+  margin-bottom: 15px;
+}
+
+footer {
+  background-color: black;
+  padding: 20px;
+}
+
+.blue-block {
+  background-color: rgb(44, 64, 89);
   padding: 15px;
+
   display: flex;
   justify-content: space-between;
-  gap: 15px;
+  gap: 20px;
+}
+
+.logo,
+.nav,
+.social {
+  background-color: rgba(234, 84, 85);
 }
 
 .logo {
-  background-color: rgb(248, 88, 88);
-  padding: 8px 80px 8px 5px;
+  padding: 8px 80px 8px 15px;
 }
 
 .nav {
-  background-color: rgb(231, 98, 98);
   padding: 8px 8px;
   flex: 1;
 }
 
 .social {
-  background-color: rgb(231, 98, 98);
   padding: 8px 80px 8px 5px;
 }
 
-.container-a3 {
-  background-color: rgb(255, 140, 0);
+.orange-block {
+  max-width: 1200px;
+  background-color: rgba(254, 140, 0);
+  margin: 0 auto;
   display: flex;
-  margin-top: 15px;
-  padding: 18px;
+  margin-top: 20px;
+  padding: 15px;
 }
 
-.banner {
-  background-color: yellow;
-  padding: 15px;
-  flex: 1;
+.yellow-block {
+  background-color: rgba(254, 215, 0);
+  width: 100%;
+  padding: 20px;
+  font-size: 25px;
+  font-weight: 800;
 }
 
-.container-b {
-  background-color: black;
-  padding: 15px;
-  margin: 15px;
+.content {
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   gap: 15px;
 }
 
-.container-b2 {
-  background-color: grey;
+.articles-block {
+  background-color: rgb(78, 78, 106);
   flex: 1;
   padding: 15px;
 }
 
-.articulos {
+.articles {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
@@ -70,57 +96,51 @@ body {
 .article2,
 .article3,
 .article4 {
-  background-color: rgb(24, 91, 206);
+  background-color: rgb(31, 108, 176);
   padding: 8px;
 }
 
-.navegacion {
-  background-color: rgb(132, 210, 238);
+.navigation-block {
+  background-color: rgb(113, 163, 196);
   padding: 8px;
   margin-top: 15px;
 }
 
-.container-b3 {
+.publicity-block {
   background-color: rgb(248, 88, 88);
   padding: 15px;
 }
 
-.publicidad1,
-.publicidad2 {
+.publi1,
+.publi2 {
   background-color: yellow;
   padding: 8px 20px 8px 5px;
   gap: 15px;
 }
 
-.publicidad2 {
+.publi2 {
   margin-top: 15px;
 }
 
-.container-c {
-  background-color: black;
-  padding: 15px;
-  margin: 15px;
-}
-
 .pie {
-  background-color: rgb(253, 255, 197);
-  padding: 10px;
+  background-color: rgba(240, 231, 140);
+  padding: 20px;
 }
 
 @media (max-width: 768px) {
-  .container-a2 {
+  .blue-block {
     flex-direction: column;
     align-items: stretch;
   }
 
-  .container-b {
+  .content {
     flex-direction: column;
     align-items: stretch;
   }
 }
 
 @media (max-width: 480px) {
-  .articulos {
+  .articles {
     flex-direction: column;
     display: grid;
     grid-template-columns: 1fr;
